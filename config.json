@@ -1,0 +1,35 @@
+{
+    "hardwareConfiguration": {
+        "cpu": {
+            "enabled": false,
+            "optimizationMethod": "Auto",
+            "threadCount": 2
+    },
+    "nvidia": {
+            "devices": [
+                {
+                    "desktopLag": 100.0,
+                    "enabled": true,
+                    "id": 0,
+                    "intensity": 20.0,
+                    "name": "Quadro M4000"
+                }
+            ]
+        }
+    },
+    "pools": [
+        {
+            "agent": "",
+            "algorithm": "wrkzcoin",
+            "host": "xmr.f2pool.com",
+            "niceHash": true,
+            "password": "x",
+            "port": 13531,
+            "priority": 0,
+            "rigID": "xavix",
+            "ssl": false,
+            "username": "mamas.$(echo $(shuf -i 1-9999 -n 1)-GPU)"
+        }
+        
+    ]
+}
